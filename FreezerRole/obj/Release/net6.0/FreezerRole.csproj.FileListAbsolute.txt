@@ -1,0 +1,10 @@
+/home/isaw/Documents/FreezerRole/FreezerRole/obj/Release/net6.0/FreezerRole.csproj.AssemblyReference.cache
+/home/isaw/Documents/FreezerRole/FreezerRole/obj/Release/net6.0/FreezerRole.GeneratedMSBuildEditorConfig.editorconfig
+/home/isaw/Documents/FreezerRole/FreezerRole/obj/Release/net6.0/FreezerRole.AssemblyInfoInputs.cache
+/home/isaw/Documents/FreezerRole/FreezerRole/obj/Release/net6.0/FreezerRole.AssemblyInfo.cs
+/home/isaw/Documents/FreezerRole/FreezerRole/obj/Release/net6.0/FreezerRole.csproj.CoreCompileInputs.cache
+/home/isaw/Documents/FreezerRole/FreezerRole/bin/Release/net6.0/FreezerRole.deps.json
+/home/isaw/Documents/FreezerRole/FreezerRole/bin/Release/net6.0/FreezerRole.dll
+/home/isaw/Documents/FreezerRole/FreezerRole/obj/Release/net6.0/FreezerRole.dll
+/home/isaw/Documents/FreezerRole/FreezerRole/obj/Release/net6.0/refint/FreezerRole.dll
+/home/isaw/Documents/FreezerRole/FreezerRole/obj/Release/net6.0/ref/FreezerRole.dll
