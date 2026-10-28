@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Isax82")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2026.10.28.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2026.10.28-dev")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2026.10.28-dev+8891d3ca808cb846c20cfdba78769b0ece56b7bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("FreezerRole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FreezerRole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2026.10.28.0")]
