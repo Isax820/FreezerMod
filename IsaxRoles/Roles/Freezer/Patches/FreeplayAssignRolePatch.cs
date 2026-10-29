@@ -2,7 +2,7 @@ using AmongUs.GameOptions;
 using HarmonyLib;
 using MiraAPI.Roles;
 
-namespace FreezerRole;
+namespace IsaxRoles;
 
 [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.FixedUpdate))]
 public static class FreeplayAssignRolePatch

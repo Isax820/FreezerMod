@@ -43,7 +43,7 @@ IsaxRoles is compatible with desktop releases of Among Us. This includes Steam, 
 
 |                                       Among Us Version                                        | IsaxRoles Version |                                        Links                                        |
 |:---------------------------------------------------------------------------------------------:|:-----------------:|:-----------------------------------------------------------------------------------:|
-|                                           `v19.0.0`                                           |   `v2026.10.29`   | [Download](https://github.com/Isax820/IsaxRoles/releases/tag/v2026.10.29) |
+|                                           `v19.0.0`                                           |   `v1.0.0`   | [Download](https://github.com/Isax820/IsaxRoles/releases/tag/v1.0.0) |
 
 # Dependencies
 

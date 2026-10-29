@@ -3,7 +3,7 @@ using MiraAPI.GameOptions.Attributes;
 using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
 
-namespace FreezerRole;
+namespace IsaxRoles;
 
 public class FreezerRoleSettings : AbstractOptionGroup<Freezer>
 {

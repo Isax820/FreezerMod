@@ -7,7 +7,7 @@ using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
 using UnityEngine;
 
-namespace FreezerRole;
+namespace IsaxRoles;
 
 [RegisterCustomButton]
 public class FreezeButton : CustomActionButton<PlayerControl>
@@ -20,7 +20,7 @@ public class FreezeButton : CustomActionButton<PlayerControl>
     public static class FreezerAssets
     {
     public static LoadableAsset<Sprite> FreezeButton { get; } =
-        new LoadableResourceAsset("FreezerRole.Resources.FreezeIcon.png");
+        new LoadableResourceAsset("IsaxRoles.Resources.FreezeIcon.png");
     }
 
     public override LoadableAsset<Sprite> Sprite => FreezerAssets.FreezeButton;
@@ -48,7 +48,7 @@ public class FreezeButton : CustomActionButton<PlayerControl>
 
     public override bool Enabled(RoleBehaviour? role)
     {
-        return role is FreezerRole;
+        return role is Freezer;
     }
 }
 

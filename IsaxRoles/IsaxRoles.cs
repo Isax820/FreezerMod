@@ -1,32 +1,51 @@
-using System;
-using System.Diagnostics;
-using MiraAPI.Roles;
-using MiraAPI.Utilities.Assets;
-using UnityEngine;
+using BepInEx;
+using BepInEx.Configuration;
+using BepInEx.Unity.IL2CPP;
+using HarmonyLib;
+using MiraAPI;
+using MiraAPI.PluginLoading;
+using MiraAPI.Translation;
+using Reactor;
+using Reactor.Utilities;
+using Reactor.Networking;
+using Reactor.Networking.Attributes;
 
-namespace FreezerRole;
+namespace IsaxRoles;
 
-[RegisterCustomRole]
-public class Freezer : ImpostorRole, ICustomRole
+[BepInAutoPlugin("com.isax.roles", "IsaxRoles")]
+[BepInProcess("Among Us.exe")]
+[BepInDependency(ReactorPlugin.Id)]
+[BepInDependency(MiraApiPlugin.Id)]
+[ReactorModFlags(ModFlags.RequireOnAllClients)]
+public partial class IsaxRoles : BasePlugin, IMiraPlugin
 {
-    public string RoleName => "Freezer";
-    public string RoleDescription => "Gèle les joueurs";
-    public string RoleLongDescription => "Gèle un joueur pendant quelques secondes.";
-    public Color RoleColor => Color.cyan;
-    public ModdedRoleTeams Team => ModdedRoleTeams.Impostor;
-    public CustomRoleConfiguration Configuration => new(this)
+    public const string DisplayVersion = "1.0.0";
+    public const string Author = "Isax820";
+    public IsaxRoles()
     {
-        Icon = MiraAssets.ImpostorFile,
-        IconTmp = TmpSpriteUtils.CreateSpriteAsset(MiraAssets.ImpostorFile.LoadAsset(), "ApiExample.Role.Impostor.Freezer"),
-        MaxRoleCount = 2,
-    };
-
-    private string GetDebuggerDisplay()
-    {
-        return ToString();
+        MiraLocaleManager.Register("com.isax.roles");
     }
-}
 
-internal class RegisterCustomRoleAttribute : Attribute
-{
+    public Harmony Harmony { get; } = new(Id);
+    public string OptionsTitleText { get; } = "Mira API\nIsax Roles";
+    public string CustomOptionMenuNameTwo { get; } = "IsaxRoles Options";
+
+    public ConfigFile GetConfigFile()
+    {
+        return Config;
+    }
+
+    public override void Load()
+    {
+        ReactorCredits.Register(
+            "IsaxRoles",
+            DisplayVersion,
+            false,
+            ReactorCredits.AlwaysShow
+        );
+
+        Harmony.PatchAll();
+
+        Log.LogMessage("IsaxRoles initialized.");
+    }
 }

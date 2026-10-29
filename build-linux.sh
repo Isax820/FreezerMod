@@ -1,0 +1,1 @@
+dotnet build IsaxRoles/IsaxRoles.csproj -c Release
