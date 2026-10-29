@@ -1,5 +1,5 @@
 > [!NOTE]
-> FreezerMod is **unstable and not compatible with somes mod like ReSubmerged !**
+> IsaxRoles is **unstable and not compatible with somes mod like ReSubmerged !**
 > 
 > It is **only compatible with [MiraAPI's mods](https://github.com/All-Of-Us-Mods/MiraAPI).**
 
@@ -9,11 +9,11 @@
 </p>
 
 <h3 align="center">
-FreezerMod
+IsaxRoles
 </h3>
 
 <p align="center">
-A Among Us mod to add the freezer role
+A Among us mod to add somes new roles
 <br/>
 
 <hr />
